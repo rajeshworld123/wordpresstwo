@@ -12,7 +12,6 @@ services:
        MYSQL_PASSWORD: wordpress
    wordpress:
      labels:
-       io.rancher.scheduler.global: 'true'
        io.rancher.scheduler.affinity:host_label: myhost=myhost
      depends_on:
        - mysql
